@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="PROJECT">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../eclipse/java-2021-12/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="17"/>
+    <property name="source" value="17"/>
+    <path id="PROJECT.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.AdminLoginPage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.AdminMainPage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.AdminProfilePage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.CreateAccountPage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.CustomerPage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.CustomersPage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.CustTRIAL.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.EmployeePage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.InventoryPage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.MainClass (3).classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.MenuPage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.OrderPage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.ProfilePage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.WaiterLoginPage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.WaiterMainPage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.WaiterOrderPage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.WaiterProfilePage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <path id="run.WelcomePage.classpath">
+        <path refid="PROJECT.classpath"/>
+        <pathelement location="../../../../Personal/App Setups/SQL/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre17.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="Pics">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="Pics"/>
+            <classpath refid="PROJECT.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="AdminLoginPage">
+        <java classname="AdminLoginPage" failonerror="true" fork="yes">
+            <classpath refid="run.AdminLoginPage.classpath"/>
+        </java>
+    </target>
+    <target name="AdminMainPage">
+        <java classname="AdminMainPage" failonerror="true" fork="yes">
+            <classpath refid="run.AdminMainPage.classpath"/>
+        </java>
+    </target>
+    <target name="AdminProfilePage">
+        <java classname="AdminProfilePage" failonerror="true" fork="yes">
+            <classpath refid="run.AdminProfilePage.classpath"/>
+        </java>
+    </target>
+    <target name="CreateAccountPage">
+        <java classname="CreateAccountPage" failonerror="true" fork="yes">
+            <classpath refid="run.CreateAccountPage.classpath"/>
+        </java>
+    </target>
+    <target name="CustomerPage">
+        <java classname="CustomerPage" failonerror="true" fork="yes">
+            <classpath refid="run.CustomerPage.classpath"/>
+        </java>
+    </target>
+    <target name="CustomersPage">
+        <java classname="CustomersPage" failonerror="true" fork="yes">
+            <classpath refid="run.CustomersPage.classpath"/>
+        </java>
+    </target>
+    <target name="CustTRIAL">
+        <java classname="CustTRIAL" failonerror="true" fork="yes">
+            <classpath refid="run.CustTRIAL.classpath"/>
+        </java>
+    </target>
+    <target name="EmployeePage">
+        <java classname="EmployeePage" failonerror="true" fork="yes">
+            <classpath refid="run.EmployeePage.classpath"/>
+        </java>
+    </target>
+    <target name="InventoryPage">
+        <java classname="InventoryPage" failonerror="true" fork="yes">
+            <classpath refid="run.InventoryPage.classpath"/>
+        </java>
+    </target>
+    <target name="MainClass (3)">
+        <java classname="MainClass" failonerror="true" fork="yes">
+            <classpath refid="run.MainClass (3).classpath"/>
+        </java>
+    </target>
+    <target name="MenuPage">
+        <java classname="MenuPage" failonerror="true" fork="yes">
+            <classpath refid="run.MenuPage.classpath"/>
+        </java>
+    </target>
+    <target name="OrderPage">
+        <java classname="OrderPage" failonerror="true" fork="yes">
+            <classpath refid="run.OrderPage.classpath"/>
+        </java>
+    </target>
+    <target name="ProfilePage">
+        <java classname="ProfilePage" failonerror="true" fork="yes">
+            <classpath refid="run.ProfilePage.classpath"/>
+        </java>
+    </target>
+    <target name="WaiterLoginPage">
+        <java classname="WaiterLoginPage" failonerror="true" fork="yes">
+            <classpath refid="run.WaiterLoginPage.classpath"/>
+        </java>
+    </target>
+    <target name="WaiterMainPage">
+        <java classname="WaiterMainPage" failonerror="true" fork="yes">
+            <classpath refid="run.WaiterMainPage.classpath"/>
+        </java>
+    </target>
+    <target name="WaiterOrderPage">
+        <java classname="WaiterOrderPage" failonerror="true" fork="yes">
+            <classpath refid="run.WaiterOrderPage.classpath"/>
+        </java>
+    </target>
+    <target name="WaiterProfilePage">
+        <java classname="WaiterProfilePage" failonerror="true" fork="yes">
+            <classpath refid="run.WaiterProfilePage.classpath"/>
+        </java>
+    </target>
+    <target name="WelcomePage">
+        <java classname="WelcomePage" failonerror="true" fork="yes">
+            <classpath refid="run.WelcomePage.classpath"/>
+        </java>
+    </target>
+</project>
